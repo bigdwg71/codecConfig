@@ -158,8 +158,8 @@ function changeInput(action){
     newInputId = currentInput.id;
   }
   
-  console.log("Current Input ID: " + currentInput.id);
-  console.log("New Input ID: " + newInputId);
+  //console.log("Current Input ID: " + currentInput.id);
+  //console.log("New Input ID: " + newInputId);
   
   let newInput = availableInputs.find(obj => obj.id == newInputId);
   
@@ -191,9 +191,9 @@ xapi.config.get('Conference MaxReceiveCallRate').then((result) => {
 });
 
 xapi.config.get('Network 1 MTU').then((result) => {
-  //console.log('Receive: ' + result);
-	xapi.command("UserInterface Extensions Widget SetValue", {WidgetId: 'mtu.Readout', Value: result + ' bytes'});
-  currentMTU = result;
+	//console.log('MTU: ' + result);
+	xapi.command("UserInterface Extensions Widget SetValue", {WidgetId: 'mtu.Readout', Value: toString(result) + ' bytes'});
+	currentMTU = result;
 });
 
 xapi.config.get('Video Input Connector').then((result) => {
