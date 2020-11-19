@@ -12,6 +12,27 @@
     <Page>
       <Name>Codec Configuration</Name>
       <Row>
+        <Name>Setting Name</Name>
+        <Widget>
+          <WidgetId>widget_3</WidgetId>
+          <Name>Modify</Name>
+          <Type>Text</Type>
+          <Options>size=2;fontSize=normal;align=center</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>widget_2</WidgetId>
+          <Name>Change to Default</Name>
+          <Type>Text</Type>
+          <Options>size=1;fontSize=small;align=center</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>widget_1</WidgetId>
+          <Name>Current Setting</Name>
+          <Type>Text</Type>
+          <Options>size=1;fontSize=normal;align=center</Options>
+        </Widget>
+      </Row>
+      <Row>
         <Name>Transmit Bitrate</Name>
         <Widget>
           <WidgetId>transmit.Minus</WidgetId>
@@ -75,7 +96,7 @@
         </Widget>
         <Widget>
           <WidgetId>mtu.Default</WidgetId>
-          <Name>Default</Name>
+          <Name>1300</Name>
           <Type>Button</Type>
           <Options>size=1</Options>
         </Widget>
@@ -100,7 +121,7 @@
         </Widget>
         <Widget>
           <WidgetId>input.HDMI1</WidgetId>
-          <Name>1</Name>
+          <Name>1st</Name>
           <Type>Button</Type>
           <Options>size=1</Options>
         </Widget>
